@@ -1,13 +1,14 @@
 import 'package:bankcredit/core/utils/size_config.dart';
-import 'package:bankcredit/features/on%20boarding/presentation/widget/page_view_item.dart';
+import 'package:bankcredit/features/on%20boarding/presentation/widgets/page_view_item.dart';
 import 'package:flutter/material.dart';
 
 class CustomPageView extends StatelessWidget {
-  const CustomPageView({super.key});
-
+  const CustomPageView({super.key, @required this.pageController});
+  final PageController? pageController;
   @override
   Widget build(BuildContext context) {
     return PageView(
+      controller: pageController,
       children: [
         PageViewItem(
           image: 'assets/images/onboarding2.png',

@@ -16,7 +16,7 @@ class PageViewItem extends StatelessWidget {
           height: SizeConfig.defaultsize! * 30,
           child: Image.asset(image!),
         ),
-        SizedBox(height: SizeConfig.defaultsize! * 5),
+        SizedBox(height: SizeConfig.defaultsize! * 2),
         Text(
           title!,
           style: TextStyle(
@@ -26,7 +26,7 @@ class PageViewItem extends StatelessWidget {
             fontWeight: FontWeight.w600,
           ),
         ),
-        SizedBox(height: SizeConfig.defaultsize! * 2),
+        SizedBox(height: SizeConfig.defaultsize! * 1),
         Padding(
           padding: EdgeInsets.all(20),
           child: Text(
@@ -34,6 +34,7 @@ class PageViewItem extends StatelessWidget {
             style: TextStyle(
               fontFamily: 'Poppins',
               fontSize: 15,
+              fontWeight: FontWeight.bold,
               color: Theme.of(context).colorScheme.onSurface,
             ),
           ),
