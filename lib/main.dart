@@ -1,8 +1,8 @@
 import 'package:bankcredit/features/on%20boarding/presentation/on_boarding_view.dart';
 import 'package:flutter/material.dart';
 
+import 'core/themes/themes.dart';
 import 'features/splash/presentation/splash_view.dart';
-import 'themes/themes.dart';
 
 void main() {
   runApp(const BankCredit());
