@@ -59,7 +59,9 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
             right: 32,
             child: InkWell(
               onTap: () {
-                Navigator.pushNamed(context, '/login');
+                if (pageController!.page! < 2) {
+                  Navigator.pushNamed(context, '/login');
+                }
               },
               child: Text(
                 'Skip',

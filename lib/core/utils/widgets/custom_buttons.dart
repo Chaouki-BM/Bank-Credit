@@ -30,3 +30,48 @@ class CustomGeneralButtons extends StatelessWidget {
     );
   }
 }
+
+class CustomButtonsWithIcon extends StatelessWidget {
+  const CustomButtonsWithIcon({
+    super.key,
+    this.onTap,
+    this.iconData,
+    required this.text,
+    required this.colorData,
+  });
+  final VoidCallback? onTap;
+  final IconData? iconData;
+  final String text;
+  final Color colorData;
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        height: 60,
+        width: SizeConfig.screenWidth,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(8),
+          color: Colors.transparent,
+          border: Border.all(color: Theme.of(context).colorScheme.onSurface),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(iconData, color: colorData),
+            SizedBox(width: SizeConfig.defaultsize! * 2),
+            Text(
+              text,
+              style: TextStyle(
+                fontWeight: FontWeight.w600,
+                fontFamily: 'Poppins',
+                color: Theme.of(context).colorScheme.secondary,
+                fontSize: 12,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
