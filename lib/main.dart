@@ -1,5 +1,6 @@
 import 'package:bankcredit/features/authentication/presentation/complete_information/complete_information_view.dart';
 import 'package:bankcredit/features/authentication/presentation/login/login_view.dart';
+import 'package:bankcredit/features/home/presentation/home_view.dart';
 import 'package:bankcredit/features/on_boarding/presentation/on_boarding_view.dart';
 import 'package:flutter/material.dart';
 
@@ -24,6 +25,7 @@ class BankCredit extends StatelessWidget {
         '/onBoarding': (context) => OnBoardingView(),
         '/login': (context) => LoginView(),
         '/completeInformation': (context) => CompleteInformationView(),
+        '/home': (context) => HomeView(),
       },
     );
   }
