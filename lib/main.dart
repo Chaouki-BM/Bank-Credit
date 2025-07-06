@@ -6,8 +6,18 @@ import 'package:flutter/material.dart';
 
 import 'core/themes/themes.dart';
 import 'features/splash/presentation/splash_view.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Supabase.initialize(
+    url:
+        'https://ozfyahiuetvcaudtcrvu.supabase.co', // <-- from Supabase dashboard
+    anonKey:
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im96ZnlhaGl1ZXR2Y2F1ZHRjcnZ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTE4MjUyMDUsImV4cCI6MjA2NzQwMTIwNX0.AXSi4MTCZeRbX2vnGp9MhgnW-s3pojl1aeF_eTCvSeo', // <-- from Supabase dashboard
+  );
+
   runApp(const BankCredit());
 }
 

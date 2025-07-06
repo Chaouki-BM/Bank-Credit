@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:bankcredit/core/utils/size_config.dart';
 import 'package:bankcredit/core/utils/widgets/custom_buttons.dart';
+import 'package:bankcredit/features/authentication/data/respotries/auth_repo_impl.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -83,8 +84,16 @@ class LoginBody extends StatelessWidget {
     Navigator.pushNamed(context, '/completeInformation');
   }
 
-  void handelLoginwithGG(BuildContext context) {
+  void handelLoginwithGG(BuildContext context) async {
     print("handelLoginwithGG");
-    Navigator.pushNamed(context, '/completeInformation');
+    final user = await AuthRepoImpl().loginWithGoogle();
+    if (user != null) {
+      Navigator.pushNamed(context, '/completeInformation');
+      print("user $user");
+    } else {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text('Login failed or cancelled')));
+    }
   }
 }
