@@ -3,10 +3,13 @@ import 'package:bankcredit/features/authentication/presentation/login/login_view
 import 'package:bankcredit/features/home/presentation/home_view.dart';
 import 'package:bankcredit/features/on_boarding/presentation/on_boarding_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'core/themes/themes.dart';
 import 'features/splash/presentation/splash_view.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+
+import 'generated/l10n.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,6 +30,14 @@ class BankCredit extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      locale: const Locale('en'),
+      localizationsDelegates: [
+        S.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: S.delegate.supportedLocales,
       debugShowCheckedModeBanner: false,
       title: 'Bank Credit',
       theme: lightTheme,

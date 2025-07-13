@@ -2,6 +2,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:bankcredit/core/utils/size_config.dart';
 import 'package:bankcredit/core/utils/widgets/custom_buttons.dart';
 import 'package:bankcredit/features/authentication/data/respotries/auth_repo_impl.dart';
+import 'package:bankcredit/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -20,7 +21,7 @@ class LoginBody extends StatelessWidget {
         AnimatedTextKit(
           animatedTexts: [
             TyperAnimatedText(
-              'Bank Credit',
+              S.of(context).LoginT,
               textStyle: TextStyle(
                 fontSize: 50,
                 fontWeight: FontWeight.w600,
@@ -43,7 +44,7 @@ class LoginBody extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsetsGeometry.symmetric(horizontal: 8),
                 child: CustomButtonsWithIcon(
-                  text: 'Login with',
+                  text: S.of(context).LoginWith,
                   iconData: FontAwesomeIcons.facebookF,
                   colorData: const Color(0xFF1877F2),
                   onTap: () => handelLoginwithFb(context),
@@ -55,7 +56,7 @@ class LoginBody extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsetsGeometry.symmetric(horizontal: 8),
                 child: CustomButtonsWithIcon(
-                  text: 'Login with',
+                  text: S.of(context).LoginWith,
                   iconData: FontAwesomeIcons.googlePlusG,
                   colorData: const Color(0xFFEA4335),
                   onTap: () => handelLoginwithGG(context),
@@ -66,7 +67,7 @@ class LoginBody extends StatelessWidget {
         ),
         Expanded(child: SizedBox()),
         Text(
-          "Welcome to BankCredit !",
+          S.of(context).WelcomeLogin,
           style: TextStyle(
             fontFamily: 'Poppins',
             fontSize: 14,
@@ -79,9 +80,16 @@ class LoginBody extends StatelessWidget {
     );
   }
 
-  void handelLoginwithFb(BuildContext context) {
+  void handelLoginwithFb(BuildContext context) async {
     print("handelLoginwithfb");
-    Navigator.pushNamed(context, '/completeInformation');
+    final user = await AuthRepoImpl().loginWithFacebook();
+    if (user != null) {
+      Navigator.pushNamed(context, '/completeInformation');
+    } else {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text('Login failed or cancelled')));
+    }
   }
 
   void handelLoginwithGG(BuildContext context) async {

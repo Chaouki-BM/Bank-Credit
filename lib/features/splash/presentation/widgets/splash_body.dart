@@ -1,4 +1,6 @@
+import 'package:bankcredit/core/utils/size_config.dart';
 import 'package:bankcredit/features/on_boarding/presentation/on_boarding_view.dart';
+import 'package:bankcredit/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -44,16 +46,19 @@ class _SplashBodyState extends State<SplashBody>
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            "Bank Credit powred by",
-            style: TextStyle(
-              fontFamily: 'Poppins',
-              fontSize: 51,
-              fontWeight: FontWeight.bold,
-              color: Theme.of(context).colorScheme.primary,
+          Center(
+            child: Text(
+              S.of(context).splashText,
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 41,
+                fontWeight: FontWeight.bold,
+                color: Theme.of(context).colorScheme.primary,
+              ),
+              textAlign: TextAlign.center,
             ),
-            textAlign: TextAlign.center,
           ),
+
           SizedBox(height: 50),
           RotationTransition(
             turns: rotationAnimation,

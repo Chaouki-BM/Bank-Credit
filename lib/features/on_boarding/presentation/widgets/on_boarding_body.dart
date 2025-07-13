@@ -1,5 +1,6 @@
 import 'package:bankcredit/core/utils/size_config.dart';
 import 'package:bankcredit/core/utils/widgets/custom_buttons.dart';
+import 'package:bankcredit/generated/l10n.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 
 import 'package:flutter/material.dart';
@@ -64,7 +65,7 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
                 }
               },
               child: Text(
-                'Skip',
+                S.of(context).Skip,
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontSize: 14,
@@ -81,8 +82,10 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
           bottom: SizeConfig.defaultsize! * 10,
           child: CustomGeneralButtons(
             text: pageController!.hasClients
-                ? (pageController?.page == 2 ? 'Get started' : 'next')
-                : 'next',
+                ? (pageController?.page == 2
+                      ? S.of(context).Get_started
+                      : S.of(context).next)
+                : S.of(context).next,
             onTap: () {
               if (pageController!.page! < 2) {
                 pageController?.nextPage(

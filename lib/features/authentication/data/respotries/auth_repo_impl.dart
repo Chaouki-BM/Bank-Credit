@@ -13,9 +13,17 @@ class AuthRepoImpl extends AuthRepo {
   }
 
   @override
-  Future loginWithFacebook() {
-    // TODO: implement loginWithFacebook
-    throw UnimplementedError();
+  Future<User?> loginWithFacebook() async {
+    try {
+      await Supabase.instance.client.auth.signInWithOAuth(
+        OAuthProvider.facebook,
+        redirectTo: 'io.supabase.flutter://login-callback/',
+      );
+      return Supabase.instance.client.auth.currentUser;
+    } catch (e) {
+      print('Facebook Sign-in error: $e');
+      return null;
+    }
   }
 
   @override
