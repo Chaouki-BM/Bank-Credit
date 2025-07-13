@@ -158,6 +158,86 @@ class S {
       args: [],
     );
   }
+
+  /// `Balance`
+  String get balance {
+    return Intl.message('Balance', name: 'balance', desc: '', args: []);
+  }
+
+  /// `Total Request`
+  String get totalRequest {
+    return Intl.message(
+      'Total Request',
+      name: 'totalRequest',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pending`
+  String get pending {
+    return Intl.message('Pending', name: 'pending', desc: '', args: []);
+  }
+
+  /// `Accepted`
+  String get accepted {
+    return Intl.message('Accepted', name: 'accepted', desc: '', args: []);
+  }
+
+  /// `In Progress`
+  String get inProgress {
+    return Intl.message('In Progress', name: 'inProgress', desc: '', args: []);
+  }
+
+  /// `Account Number`
+  String get accountNumber {
+    return Intl.message(
+      'Account Number',
+      name: 'accountNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Account`
+  String get account {
+    return Intl.message('Account', name: 'account', desc: '', args: []);
+  }
+
+  /// `Enter your number`
+  String get enterNumber {
+    return Intl.message(
+      'Enter your number',
+      name: 'enterNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your address`
+  String get enterAddress {
+    return Intl.message(
+      'Enter your address',
+      name: 'enterAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your name`
+  String get enterName {
+    return Intl.message(
+      'Enter your name',
+      name: 'enterName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login`
+  String get login {
+    return Intl.message('Login', name: 'login', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

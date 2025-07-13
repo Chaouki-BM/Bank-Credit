@@ -47,9 +47,22 @@ class MessageLookup extends MessageLookupByLibrary {
     "WelcomeLogin": MessageLookupByLibrary.simpleMessage(
       "Bienvenue chez BankCredit !",
     ),
+    "accepted": MessageLookupByLibrary.simpleMessage("Accepté"),
+    "account": MessageLookupByLibrary.simpleMessage("Compte"),
+    "accountNumber": MessageLookupByLibrary.simpleMessage("Numéro de compte"),
+    "balance": MessageLookupByLibrary.simpleMessage("Solde"),
+    "enterAddress": MessageLookupByLibrary.simpleMessage(
+      "Entrez votre adresse",
+    ),
+    "enterName": MessageLookupByLibrary.simpleMessage("Entrez votre nom"),
+    "enterNumber": MessageLookupByLibrary.simpleMessage("Entrez votre numéro"),
+    "inProgress": MessageLookupByLibrary.simpleMessage("En cours"),
+    "login": MessageLookupByLibrary.simpleMessage("Se connecter"),
     "next": MessageLookupByLibrary.simpleMessage("Suivant"),
+    "pending": MessageLookupByLibrary.simpleMessage("En attente"),
     "splashText": MessageLookupByLibrary.simpleMessage(
       "Crédit Bancaire propulsé par",
     ),
+    "totalRequest": MessageLookupByLibrary.simpleMessage("Requêtes totales"),
   };
 }

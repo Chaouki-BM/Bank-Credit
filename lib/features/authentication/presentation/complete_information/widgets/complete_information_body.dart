@@ -1,6 +1,7 @@
 import 'package:bankcredit/core/utils/size_config.dart';
 import 'package:bankcredit/core/utils/widgets/custom_buttons.dart';
 import 'package:bankcredit/core/utils/widgets/custom_text_field.dart';
+import 'package:bankcredit/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class CompleteInformationBody extends StatelessWidget {
@@ -16,7 +17,7 @@ class CompleteInformationBody extends StatelessWidget {
           children: [
             SizedBox(height: SizeConfig.defaultsize! * 10),
             Text(
-              "Enter your name",
+              S.of(context).enterName,
               style: TextStyle(
                 color: Theme.of(context).colorScheme.secondary,
                 fontFamily: 'Poppins',
@@ -28,7 +29,7 @@ class CompleteInformationBody extends StatelessWidget {
             CustomTextField(inputType: TextInputType.text, maxLines: 1),
             SizedBox(height: SizeConfig.defaultsize! * 2),
             Text(
-              "Enter your number",
+              S.of(context).enterNumber,
               style: TextStyle(
                 color: Theme.of(context).colorScheme.secondary,
                 fontFamily: 'Poppins',
@@ -40,7 +41,7 @@ class CompleteInformationBody extends StatelessWidget {
             CustomTextField(inputType: TextInputType.number, maxLines: 1),
             SizedBox(height: SizeConfig.defaultsize! * 2),
             Text(
-              "Enter your address",
+              S.of(context).enterAddress,
               style: TextStyle(
                 color: Theme.of(context).colorScheme.secondary,
                 fontFamily: 'Poppins',
@@ -52,7 +53,7 @@ class CompleteInformationBody extends StatelessWidget {
             CustomTextField(inputType: TextInputType.text, maxLines: 5),
             SizedBox(height: SizeConfig.defaultsize! * 10),
             CustomGeneralButtons(
-              text: 'Login',
+              text: S.of(context).login,
               onTap: () => HandelLogin(context),
             ),
           ],

@@ -81,15 +81,16 @@ class LoginBody extends StatelessWidget {
   }
 
   void handelLoginwithFb(BuildContext context) async {
-    print("handelLoginwithfb");
-    final user = await AuthRepoImpl().loginWithFacebook();
-    if (user != null) {
-      Navigator.pushNamed(context, '/completeInformation');
-    } else {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text('Login failed or cancelled')));
-    }
+    // print("handelLoginwithfb");
+    // final user = await AuthRepoImpl().loginWithFacebook();
+    // if (user != null) {
+    //   Navigator.pushNamed(context, '/completeInformation');
+    // } else {
+    //   ScaffoldMessenger.of(
+    //     context,
+    //   ).showSnackBar(SnackBar(content: Text('Login failed or cancelled')));
+    // }
+    Navigator.pushNamed(context, '/completeInformation');
   }
 
   void handelLoginwithGG(BuildContext context) async {

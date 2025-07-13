@@ -30,7 +30,7 @@ class BankCredit extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      locale: const Locale('en'),
+      locale: const Locale('ar'),
       localizationsDelegates: [
         S.delegate,
         GlobalMaterialLocalizations.delegate,

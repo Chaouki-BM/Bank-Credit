@@ -11,5 +11,16 @@
   "SsubT3": "Vos données sont protégées par un chiffrement de niveau bancaire et les notifications en temps réel vous tiennent informé.",
   "LoginT": "Crédit Bancaire",
   "LoginWith": "Se connecter avec",
-  "WelcomeLogin": "Bienvenue chez BankCredit !"
+  "WelcomeLogin": "Bienvenue chez BankCredit !",
+  "balance": "Solde",
+  "totalRequest": "Requêtes totales",
+  "pending": "En attente",
+  "accepted": "Accepté",
+  "inProgress": "En cours",
+  "accountNumber": "Numéro de compte",
+  "account":"Compte",
+  "enterNumber": "Entrez votre numéro",
+  "enterAddress": "Entrez votre adresse",
+  "enterName": "Entrez votre nom",
+  "login": "Se connecter"
 }

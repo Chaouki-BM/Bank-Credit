@@ -11,5 +11,16 @@
     "SsubT3":"Your data is protected with bank-grade encryption and real-time notifications keep you informed.",
     "LoginT":"Bank Credit",
     "LoginWith":"Login with",
-    "WelcomeLogin":"Welcome to BankCredit !"
+    "WelcomeLogin":"Welcome to BankCredit !",
+    "balance": "Balance",
+    "totalRequest": "Total Request",
+    "pending": "Pending",
+    "accepted": "Accepted",
+    "inProgress": "In Progress",
+    "accountNumber": "Account Number",
+    "account":"Account",
+    "enterNumber": "Enter your number",
+    "enterAddress": "Enter your address",
+    "enterName": "Enter your name",
+    "login": "Login"
 }

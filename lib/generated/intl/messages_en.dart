@@ -45,7 +45,18 @@ class MessageLookup extends MessageLookupByLibrary {
     "WelcomeLogin": MessageLookupByLibrary.simpleMessage(
       "Welcome to BankCredit !",
     ),
+    "accepted": MessageLookupByLibrary.simpleMessage("Accepted"),
+    "account": MessageLookupByLibrary.simpleMessage("Account"),
+    "accountNumber": MessageLookupByLibrary.simpleMessage("Account Number"),
+    "balance": MessageLookupByLibrary.simpleMessage("Balance"),
+    "enterAddress": MessageLookupByLibrary.simpleMessage("Enter your address"),
+    "enterName": MessageLookupByLibrary.simpleMessage("Enter your name"),
+    "enterNumber": MessageLookupByLibrary.simpleMessage("Enter your number"),
+    "inProgress": MessageLookupByLibrary.simpleMessage("In Progress"),
+    "login": MessageLookupByLibrary.simpleMessage("Login"),
     "next": MessageLookupByLibrary.simpleMessage("next"),
+    "pending": MessageLookupByLibrary.simpleMessage("Pending"),
     "splashText": MessageLookupByLibrary.simpleMessage("Bank Credit powred by"),
+    "totalRequest": MessageLookupByLibrary.simpleMessage("Total Request"),
   };
 }
