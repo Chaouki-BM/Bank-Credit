@@ -13,10 +13,10 @@ class HomeBody extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedBox(height: SizeConfig.defaultsize! * 4),
         Center(
           child: Column(
             children: [
+              SizedBox(height: SizeConfig.defaultsize! * 4),
               Text(
                 S.of(context).account,
                 style: TextStyle(
@@ -26,14 +26,13 @@ class HomeBody extends StatelessWidget {
                   color: Theme.of(context).colorScheme.secondary,
                 ),
               ),
-
-              SizedBox(height: SizeConfig.defaultsize! * 2),
+              SizedBox(height: SizeConfig.defaultsize! * 1),
               CircleAvatar(
                 radius: 65,
                 backgroundColor: Colors.grey,
                 child: Icon(Icons.face, size: 65),
               ),
-              SizedBox(height: SizeConfig.defaultsize! * 2),
+              SizedBox(height: SizeConfig.defaultsize! * 1),
               Text(
                 "Chaouki Ben Miled",
                 style: TextStyle(
@@ -55,10 +54,10 @@ class HomeBody extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(height: SizeConfig.defaultsize! * 2),
+        SizedBox(height: SizeConfig.defaultsize! * 1),
 
         Padding(
-          padding: EdgeInsetsGeometry.all(10),
+          padding: EdgeInsetsGeometry.only(left: 10, right: 10, bottom: 7),
           child: CustomHomeCard(
             titel: S.of(context).balance,
             value: '\$5.432.10 💰',
@@ -70,7 +69,11 @@ class HomeBody extends StatelessWidget {
             Flexible(
               flex: 1,
               child: Padding(
-                padding: const EdgeInsets.only(left: 5, right: 5, bottom: 5),
+                padding: const EdgeInsetsDirectional.only(
+                  end: 3,
+                  start: 10,
+                  bottom: 2,
+                ),
                 child: CustomHomeCard(
                   titel: S.of(context).totalRequest,
                   value: '5 📋',
@@ -80,7 +83,11 @@ class HomeBody extends StatelessWidget {
             Flexible(
               flex: 1,
               child: Padding(
-                padding: const EdgeInsets.only(left: 5, right: 5, bottom: 5),
+                padding: const EdgeInsetsDirectional.only(
+                  end: 10,
+                  start: 3,
+                  bottom: 2,
+                ),
                 child: CustomHomeCard(
                   titel: S.of(context).accepted,
                   value: '2 ✔️',
@@ -92,7 +99,7 @@ class HomeBody extends StatelessWidget {
         SizedBox(height: SizeConfig.defaultsize! * .5),
         Expanded(
           child: SingleChildScrollView(
-            padding: const EdgeInsets.symmetric(horizontal: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 10),
             child: Container(
               width: SizeConfig.screenWidth,
               decoration: BoxDecoration(

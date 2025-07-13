@@ -23,12 +23,12 @@ class CustomHomeCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.all(18.0),
+            padding: const EdgeInsets.all(13.0),
             child: Text(
               titel,
               style: TextStyle(
                 fontWeight: FontWeight.w500,
-                fontSize: 18,
+                fontSize: 16,
                 color: Theme.of(context).colorScheme.onSurface,
               ),
             ),

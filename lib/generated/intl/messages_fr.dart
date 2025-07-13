@@ -56,10 +56,8 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "enterName": MessageLookupByLibrary.simpleMessage("Entrez votre nom"),
     "enterNumber": MessageLookupByLibrary.simpleMessage("Entrez votre numéro"),
-    "inProgress": MessageLookupByLibrary.simpleMessage("En cours"),
     "login": MessageLookupByLibrary.simpleMessage("Se connecter"),
     "next": MessageLookupByLibrary.simpleMessage("Suivant"),
-    "pending": MessageLookupByLibrary.simpleMessage("En attente"),
     "splashText": MessageLookupByLibrary.simpleMessage(
       "Crédit Bancaire propulsé par",
     ),

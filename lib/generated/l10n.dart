@@ -174,19 +174,9 @@ class S {
     );
   }
 
-  /// `Pending`
-  String get pending {
-    return Intl.message('Pending', name: 'pending', desc: '', args: []);
-  }
-
   /// `Accepted`
   String get accepted {
     return Intl.message('Accepted', name: 'accepted', desc: '', args: []);
-  }
-
-  /// `In Progress`
-  String get inProgress {
-    return Intl.message('In Progress', name: 'inProgress', desc: '', args: []);
   }
 
   /// `Account Number`
