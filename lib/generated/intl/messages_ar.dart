@@ -50,6 +50,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "enterNumber": MessageLookupByLibrary.simpleMessage("أدخل رقمك"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "next": MessageLookupByLibrary.simpleMessage("التالي"),
+    "pending": MessageLookupByLibrary.simpleMessage("قيد الانتظار"),
+    "refused": MessageLookupByLibrary.simpleMessage("مرفوض"),
     "splashText": MessageLookupByLibrary.simpleMessage("تمويل بنكي مقدم من"),
     "totalRequest": MessageLookupByLibrary.simpleMessage("إجمالي الطلبات"),
   };

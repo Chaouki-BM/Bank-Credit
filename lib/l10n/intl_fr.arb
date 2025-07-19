@@ -20,5 +20,7 @@
   "enterNumber": "Entrez votre numéro",
   "enterAddress": "Entrez votre adresse",
   "enterName": "Entrez votre nom",
-  "login": "Se connecter"
+  "login": "Se connecter",
+  "refused":"Refusé",
+  "pending":"En attente"
 }

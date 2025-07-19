@@ -16,7 +16,6 @@ class HomeBody extends StatelessWidget {
         Center(
           child: Column(
             children: [
-              SizedBox(height: SizeConfig.defaultsize! * 4),
               Text(
                 S.of(context).account,
                 style: TextStyle(
@@ -115,7 +114,8 @@ class HomeBody extends StatelessWidget {
                 children: [
                   ...List.generate(
                     20,
-                    (index) => ScrollViewItem(),
+                    (index) =>
+                        ScrollViewItem(TextItem: 'item', Status: 'Accepted'),
                     //ListTile(title: Text("Item ${index + 1}")),
                   ),
                 ],

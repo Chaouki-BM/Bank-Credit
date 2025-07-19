@@ -54,6 +54,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "enterNumber": MessageLookupByLibrary.simpleMessage("Enter your number"),
     "login": MessageLookupByLibrary.simpleMessage("Login"),
     "next": MessageLookupByLibrary.simpleMessage("next"),
+    "pending": MessageLookupByLibrary.simpleMessage("Pending"),
+    "refused": MessageLookupByLibrary.simpleMessage("Refused"),
     "splashText": MessageLookupByLibrary.simpleMessage("Bank Credit powred by"),
     "totalRequest": MessageLookupByLibrary.simpleMessage("Total Request"),
   };

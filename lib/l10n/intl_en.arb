@@ -20,5 +20,7 @@
     "enterNumber": "Enter your number",
     "enterAddress": "Enter your address",
     "enterName": "Enter your name",
-    "login": "Login"
+    "login": "Login",
+    "refused":"Refused",
+    "pending":"Pending"
 }

@@ -228,6 +228,16 @@ class S {
   String get login {
     return Intl.message('Login', name: 'login', desc: '', args: []);
   }
+
+  /// `Refused`
+  String get refused {
+    return Intl.message('Refused', name: 'refused', desc: '', args: []);
+  }
+
+  /// `Pending`
+  String get pending {
+    return Intl.message('Pending', name: 'pending', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

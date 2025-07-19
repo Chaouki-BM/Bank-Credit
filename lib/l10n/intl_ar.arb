@@ -20,5 +20,7 @@
   "enterNumber": "أدخل رقمك",
   "enterAddress": "أدخل عنوانك",
   "enterName": "أدخل اسمك",
-  "login": "تسجيل الدخول"
+  "login": "تسجيل الدخول",
+  "refused":"مرفوض",
+  "pending":"قيد الانتظار"
 }
