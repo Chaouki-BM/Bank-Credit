@@ -1,0 +1,19 @@
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter/material.dart';
+
+class LocaleStorage {
+  static const String _key = 'app_locale';
+
+  /// Save selected language code (like "en", "fr", "ar")
+  static Future<void> saveLocale(Locale locale) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_key, locale.languageCode);
+  }
+
+  /// Load saved language, or return English by default
+  static Future<Locale> getSavedLocale() async {
+    final prefs = await SharedPreferences.getInstance();
+    final code = prefs.getString(_key) ?? 'en';
+    return Locale(code);
+  }
+}

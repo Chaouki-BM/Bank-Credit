@@ -44,8 +44,8 @@ class LoginBody extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsetsGeometry.symmetric(horizontal: 8),
                 child: CustomButtonsWithIcon(
-                  text: S.of(context).LoginWith,
-                  iconData: FontAwesomeIcons.facebookF,
+                  text: S.of(context).Guest,
+                  iconData: FontAwesomeIcons.circleUser,
                   colorData: const Color(0xFF1877F2),
                   onTap: () => handelLoginwithFb(context),
                 ),
@@ -90,7 +90,7 @@ class LoginBody extends StatelessWidget {
     //     context,
     //   ).showSnackBar(SnackBar(content: Text('Login failed or cancelled')));
     // }
-    Navigator.pushNamed(context, '/completeInformation');
+    Navigator.pushNamed(context, '/calculate');
   }
 
   void handelLoginwithGG(BuildContext context) async {

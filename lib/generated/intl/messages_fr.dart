@@ -22,9 +22,17 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "Calculate": MessageLookupByLibrary.simpleMessage("Calculer"),
+    "DT": MessageLookupByLibrary.simpleMessage("DT"),
     "Get_started": MessageLookupByLibrary.simpleMessage("Commencer"),
+    "Guest": MessageLookupByLibrary.simpleMessage("Invité"),
+    "Home": MessageLookupByLibrary.simpleMessage("Accueil"),
+    "Interest": MessageLookupByLibrary.simpleMessage("Intérêt"),
+    "Loan": MessageLookupByLibrary.simpleMessage("Prêt"),
     "LoginT": MessageLookupByLibrary.simpleMessage("Crédit Bancaire"),
     "LoginWith": MessageLookupByLibrary.simpleMessage("Se connecter avec"),
+    "MonthlyP": MessageLookupByLibrary.simpleMessage("Paiement Mensuel"),
+    "Profile": MessageLookupByLibrary.simpleMessage("Profil"),
     "Skip": MessageLookupByLibrary.simpleMessage("Passer"),
     "SplashT1": MessageLookupByLibrary.simpleMessage(
       "Bienvenue chez BankCredit",
@@ -44,21 +52,38 @@ class MessageLookup extends MessageLookupByLibrary {
     "SsubT3": MessageLookupByLibrary.simpleMessage(
       "Vos données sont protégées par un chiffrement de niveau bancaire et les notifications en temps réel vous tiennent informé.",
     ),
+    "Term": MessageLookupByLibrary.simpleMessage("Durée"),
     "WelcomeLogin": MessageLookupByLibrary.simpleMessage(
       "Bienvenue chez BankCredit !",
     ),
     "accepted": MessageLookupByLibrary.simpleMessage("Accepté"),
     "account": MessageLookupByLibrary.simpleMessage("Compte"),
     "accountNumber": MessageLookupByLibrary.simpleMessage("Numéro de compte"),
+    "account_settings": MessageLookupByLibrary.simpleMessage(
+      "Paramètres du compte",
+    ),
+    "ar": MessageLookupByLibrary.simpleMessage("Arabe"),
     "balance": MessageLookupByLibrary.simpleMessage("Solde"),
+    "call_the_bank": MessageLookupByLibrary.simpleMessage("Appeler la banque"),
+    "dashboard": MessageLookupByLibrary.simpleMessage("Tableau de bord"),
+    "en": MessageLookupByLibrary.simpleMessage("Anglais"),
     "enterAddress": MessageLookupByLibrary.simpleMessage(
       "Entrez votre adresse",
     ),
     "enterName": MessageLookupByLibrary.simpleMessage("Entrez votre nom"),
     "enterNumber": MessageLookupByLibrary.simpleMessage("Entrez votre numéro"),
+    "fr": MessageLookupByLibrary.simpleMessage("Français"),
+    "language": MessageLookupByLibrary.simpleMessage("Langue"),
+    "linked_card": MessageLookupByLibrary.simpleMessage("Carte liée"),
     "login": MessageLookupByLibrary.simpleMessage("Se connecter"),
+    "logout": MessageLookupByLibrary.simpleMessage("Déconnexion"),
     "next": MessageLookupByLibrary.simpleMessage("Suivant"),
+    "online_support": MessageLookupByLibrary.simpleMessage("Support en ligne"),
     "pending": MessageLookupByLibrary.simpleMessage("En attente"),
+    "permonth": MessageLookupByLibrary.simpleMessage("par mois"),
+    "profile_information": MessageLookupByLibrary.simpleMessage(
+      "Informations du profil",
+    ),
     "refused": MessageLookupByLibrary.simpleMessage("Refusé"),
     "splashText": MessageLookupByLibrary.simpleMessage(
       "Crédit Bancaire propulsé par",

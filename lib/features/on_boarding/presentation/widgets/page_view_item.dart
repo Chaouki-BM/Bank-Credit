@@ -1,6 +1,5 @@
 import 'package:bankcredit/core/utils/size_config.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class PageViewItem extends StatelessWidget {
   const PageViewItem({super.key, this.image, this.subTitle, this.title});
@@ -12,7 +11,7 @@ class PageViewItem extends StatelessWidget {
     return Column(
       children: [
         SizedBox(height: SizeConfig.defaultsize! * 22),
-        Container(
+        SizedBox(
           height: SizeConfig.defaultsize! * 30,
           child: Image.asset(image!),
         ),

@@ -22,5 +22,27 @@
   "enterName": "أدخل اسمك",
   "login": "تسجيل الدخول",
   "refused":"مرفوض",
-  "pending":"قيد الانتظار"
+  "pending":"قيد الانتظار",
+  "Home":"الرئيسية",
+  "Calculate":"حساب",
+  "Profile":"الملف الشخصي",
+  "account_settings": "إعدادات الحساب",
+  "call_the_bank": "اتصل بالبنك",
+  "online_support": "الدعم عبر الإنترنت",
+  "dashboard": "لوحة التحكم",
+  "profile_information": "معلومات الملف الشخصي",
+  "linked_card": "البطاقة المرتبطة",
+  "language": "اللغة",
+  "logout": "تسجيل الخروج",
+  "Guest":"ضيف",
+  "en": "الإنجليزية",
+  "fr": "الفرنسية",
+  "ar": "العربية",
+  "Loan":"قرض",
+  "Term":"مدة",
+  "Interest":"فائدة",
+  "MonthlyP":"الدفعة الشهرية",
+  "DT":"د.ت",
+  "permonth":"بالشهر"
+
 }

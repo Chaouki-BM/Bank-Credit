@@ -22,5 +22,27 @@
   "enterName": "Entrez votre nom",
   "login": "Se connecter",
   "refused":"Refusé",
-  "pending":"En attente"
+  "pending":"En attente",
+  "Home":"Accueil",
+  "Calculate":"Calculer",
+  "Profile":"Profil",
+  "account_settings": "Paramètres du compte",
+  "call_the_bank": "Appeler la banque",
+  "online_support": "Support en ligne",
+  "dashboard": "Tableau de bord",
+  "profile_information": "Informations du profil",
+  "linked_card": "Carte liée",
+  "language": "Langue",
+  "logout": "Déconnexion",
+  "Guest":"Invité",
+  "en": "Anglais",
+  "fr": "Français",
+  "ar": "Arabe",
+  "Loan":"Prêt",
+  "Term":"Durée",
+  "Interest":"Intérêt",
+  "MonthlyP":"Paiement Mensuel",
+  "DT":"DT",
+  "permonth":"par mois"
+
 }

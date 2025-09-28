@@ -1,5 +1,3 @@
-import 'package:bankcredit/core/utils/size_config.dart';
-import 'package:bankcredit/features/on_boarding/presentation/on_boarding_view.dart';
 import 'package:bankcredit/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';

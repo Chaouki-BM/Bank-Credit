@@ -1,10 +1,12 @@
+import 'package:bankcredit/core/utils/locale_storage.dart';
 import 'package:bankcredit/features/authentication/presentation/complete_information/complete_information_view.dart';
 import 'package:bankcredit/features/authentication/presentation/login/login_view.dart';
+import 'package:bankcredit/features/calculate/presentation/calculate_view.dart';
 import 'package:bankcredit/features/home/presentation/home_view.dart';
 import 'package:bankcredit/features/on_boarding/presentation/on_boarding_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-
+import './features/navigation/presentation/buttom_navigation_view.dart';
 import 'core/themes/themes.dart';
 import 'features/splash/presentation/splash_view.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -24,13 +26,38 @@ void main() async {
   runApp(const BankCredit());
 }
 
-class BankCredit extends StatelessWidget {
+class BankCredit extends StatefulWidget {
   const BankCredit({super.key});
+
+  @override
+  State<BankCredit> createState() => _BankCreditState();
+}
+
+class _BankCreditState extends State<BankCredit> {
+  Locale _locale = const Locale('en');
+  @override
+  void initState() {
+    super.initState();
+    _loadLocale();
+  }
+
+  void _loadLocale() async {
+    Locale saved = await LocaleStorage.getSavedLocale();
+    setState(() {
+      _locale = saved;
+    });
+  }
+
+  void _changeLocale(Locale locale) {
+    setState(() {
+      _locale = locale;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      locale: const Locale('en'),
+      locale: _locale,
       localizationsDelegates: [
         S.delegate,
         GlobalMaterialLocalizations.delegate,
@@ -47,6 +74,9 @@ class BankCredit extends StatelessWidget {
         '/login': (context) => LoginView(),
         '/completeInformation': (context) => CompleteInformationView(),
         '/home': (context) => HomeView(),
+        '/buttomNavigation': (context) =>
+            ButtomNavigationView(onLocaleChange: _changeLocale),
+        '/calculate': (context) => CalculateView(),
       },
     );
   }

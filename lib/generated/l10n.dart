@@ -238,6 +238,136 @@ class S {
   String get pending {
     return Intl.message('Pending', name: 'pending', desc: '', args: []);
   }
+
+  /// `Home`
+  String get Home {
+    return Intl.message('Home', name: 'Home', desc: '', args: []);
+  }
+
+  /// `Calculate`
+  String get Calculate {
+    return Intl.message('Calculate', name: 'Calculate', desc: '', args: []);
+  }
+
+  /// `Profile`
+  String get Profile {
+    return Intl.message('Profile', name: 'Profile', desc: '', args: []);
+  }
+
+  /// `Account Settings`
+  String get account_settings {
+    return Intl.message(
+      'Account Settings',
+      name: 'account_settings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Call the bank`
+  String get call_the_bank {
+    return Intl.message(
+      'Call the bank',
+      name: 'call_the_bank',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Online support`
+  String get online_support {
+    return Intl.message(
+      'Online support',
+      name: 'online_support',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dashboard`
+  String get dashboard {
+    return Intl.message('Dashboard', name: 'dashboard', desc: '', args: []);
+  }
+
+  /// `Profile Information`
+  String get profile_information {
+    return Intl.message(
+      'Profile Information',
+      name: 'profile_information',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Linked Card`
+  String get linked_card {
+    return Intl.message('Linked Card', name: 'linked_card', desc: '', args: []);
+  }
+
+  /// `Language`
+  String get language {
+    return Intl.message('Language', name: 'language', desc: '', args: []);
+  }
+
+  /// `Log out`
+  String get logout {
+    return Intl.message('Log out', name: 'logout', desc: '', args: []);
+  }
+
+  /// `Guest`
+  String get Guest {
+    return Intl.message('Guest', name: 'Guest', desc: '', args: []);
+  }
+
+  /// `English`
+  String get en {
+    return Intl.message('English', name: 'en', desc: '', args: []);
+  }
+
+  /// `French`
+  String get fr {
+    return Intl.message('French', name: 'fr', desc: '', args: []);
+  }
+
+  /// `Arabic`
+  String get ar {
+    return Intl.message('Arabic', name: 'ar', desc: '', args: []);
+  }
+
+  /// `Loan`
+  String get Loan {
+    return Intl.message('Loan', name: 'Loan', desc: '', args: []);
+  }
+
+  /// `Term`
+  String get Term {
+    return Intl.message('Term', name: 'Term', desc: '', args: []);
+  }
+
+  /// `Interest`
+  String get Interest {
+    return Intl.message('Interest', name: 'Interest', desc: '', args: []);
+  }
+
+  /// `Monthly Payment`
+  String get MonthlyP {
+    return Intl.message(
+      'Monthly Payment',
+      name: 'MonthlyP',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `DT`
+  String get DT {
+    return Intl.message('DT', name: 'DT', desc: '', args: []);
+  }
+
+  /// `per month`
+  String get permonth {
+    return Intl.message('per month', name: 'permonth', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

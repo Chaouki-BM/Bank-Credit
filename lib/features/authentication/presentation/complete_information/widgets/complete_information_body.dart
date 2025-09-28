@@ -63,6 +63,6 @@ class CompleteInformationBody extends StatelessWidget {
   }
 
   void HandelLogin(BuildContext context) {
-    Navigator.pushNamed(context, '/home');
+    Navigator.pushNamed(context, '/buttomNavigation');
   }
 }
