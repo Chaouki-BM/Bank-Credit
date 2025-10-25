@@ -368,6 +368,46 @@ class S {
   String get permonth {
     return Intl.message('per month', name: 'permonth', desc: '', args: []);
   }
+
+  /// `Scan`
+  String get Scan {
+    return Intl.message('Scan', name: 'Scan', desc: '', args: []);
+  }
+
+  /// `Your identity and personal data are securely protected.`
+  String get Subtitle1Scan {
+    return Intl.message(
+      'Your identity and personal data are securely protected.',
+      name: 'Subtitle1Scan',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Fast, simple, and 100% paperless.`
+  String get Subtitle2Scan {
+    return Intl.message(
+      'Fast, simple, and 100% paperless.',
+      name: 'Subtitle2Scan',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Scan your document`
+  String get titelScan {
+    return Intl.message(
+      'Scan your document',
+      name: 'titelScan',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Upload`
+  String get upload {
+    return Intl.message('Upload', name: 'upload', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

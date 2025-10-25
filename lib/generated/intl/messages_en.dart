@@ -33,6 +33,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "LoginWith": MessageLookupByLibrary.simpleMessage("Login with"),
     "MonthlyP": MessageLookupByLibrary.simpleMessage("Monthly Payment"),
     "Profile": MessageLookupByLibrary.simpleMessage("Profile"),
+    "Scan": MessageLookupByLibrary.simpleMessage("Scan"),
     "Skip": MessageLookupByLibrary.simpleMessage("Skip"),
     "SplashT1": MessageLookupByLibrary.simpleMessage("Welcome to BankCredit"),
     "SplashT2": MessageLookupByLibrary.simpleMessage(
@@ -49,6 +50,12 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "SsubT3": MessageLookupByLibrary.simpleMessage(
       "Your data is protected with bank-grade encryption and real-time notifications keep you informed.",
+    ),
+    "Subtitle1Scan": MessageLookupByLibrary.simpleMessage(
+      "Your identity and personal data are securely protected.",
+    ),
+    "Subtitle2Scan": MessageLookupByLibrary.simpleMessage(
+      "Fast, simple, and 100% paperless.",
     ),
     "Term": MessageLookupByLibrary.simpleMessage("Term"),
     "WelcomeLogin": MessageLookupByLibrary.simpleMessage(
@@ -82,6 +89,8 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "refused": MessageLookupByLibrary.simpleMessage("Refused"),
     "splashText": MessageLookupByLibrary.simpleMessage("Bank Credit powred by"),
+    "titelScan": MessageLookupByLibrary.simpleMessage("Scan your document"),
     "totalRequest": MessageLookupByLibrary.simpleMessage("Total Request"),
+    "upload": MessageLookupByLibrary.simpleMessage("Upload"),
   };
 }

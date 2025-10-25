@@ -34,19 +34,12 @@ class _SettingBodyState extends State<SettingBody> {
             ),
           ),
           SizedBox(height: SizeConfig.defaultsize! * 2),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(Icons.edit_square),
-              SizedBox(width: SizeConfig.defaultsize! * 3),
-              CircleAvatar(
-                radius: 40,
-                backgroundColor: Colors.grey,
-                child: Icon(Icons.face, size: 40),
-              ),
-              SizedBox(width: SizeConfig.defaultsize! * 3),
-              Icon(Icons.link),
-            ],
+          const Center(
+            child: CircleAvatar(
+              radius: 40,
+              backgroundColor: Colors.grey,
+              child: Icon(Icons.face, size: 40),
+            ),
           ),
           SizedBox(height: SizeConfig.defaultsize! * 1),
           Center(
@@ -85,7 +78,7 @@ class _SettingBodyState extends State<SettingBody> {
                   child: CustomSettingCard(
                     onTap: () {
                       print("Call the bank clicked !");
-                      AppLauncher.callPhone("22647512");
+                      AppLauncher.callPhone("54144315");
                     },
                     Customtext: S.of(context).call_the_bank,
                     icon: Icons.call,
@@ -174,6 +167,7 @@ class _SettingBodyState extends State<SettingBody> {
                               onTap: () {
                                 widget.onLocaleChange(const Locale('en'));
                                 LocaleStorage.saveLocale(const Locale('en'));
+                                isClicked = false;
                               },
                               child: Text(
                                 S.of(context).en,
@@ -191,6 +185,7 @@ class _SettingBodyState extends State<SettingBody> {
                               onTap: () {
                                 widget.onLocaleChange(const Locale('fr'));
                                 LocaleStorage.saveLocale(const Locale('fr'));
+                                isClicked = false;
                               },
                               child: Text(
                                 S.of(context).fr,
@@ -208,6 +203,7 @@ class _SettingBodyState extends State<SettingBody> {
                               onTap: () {
                                 widget.onLocaleChange(const Locale('ar'));
                                 LocaleStorage.saveLocale(const Locale('ar'));
+                                isClicked = false;
                               },
                               child: Text(
                                 S.of(context).ar,

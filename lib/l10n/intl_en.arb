@@ -43,5 +43,11 @@
     "Interest":"Interest",
     "MonthlyP":"Monthly Payment",
     "DT":"DT",
-    "permonth":"per month"
+    "permonth":"per month",
+    "Scan":"Scan",
+    "Subtitle1Scan":"Your identity and personal data are securely protected.",
+    "Subtitle2Scan":"Fast, simple, and 100% paperless.",
+    "titelScan":"Scan your document",
+    "upload":"Upload"
+
 }

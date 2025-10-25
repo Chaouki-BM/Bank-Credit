@@ -1,5 +1,6 @@
 import 'package:bankcredit/features/calculate/presentation/calculate_view.dart';
 import 'package:bankcredit/features/home/presentation/home_view.dart';
+import 'package:bankcredit/features/scan/presentation/scan_view.dart';
 import 'package:bankcredit/features/settings/presentation/setting_view.dart';
 import 'package:flutter/material.dart';
 import 'package:bankcredit/generated/l10n.dart';
@@ -20,6 +21,7 @@ class _ButtomNavigatioBodyState extends State<ButtomNavigatioBody> {
     List<Widget> widjetList = [
       const HomeView(),
       const CalculateView(),
+      const ScanView(),
       SettingView(onLocaleChange: widget.onLocaleChange),
     ];
     return Scaffold(
@@ -43,6 +45,10 @@ class _ButtomNavigatioBodyState extends State<ButtomNavigatioBody> {
           BottomNavigationBarItem(
             icon: Icon(Icons.calculate),
             label: S.of(context).Calculate,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.document_scanner),
+            label: S.of(context).Scan,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),

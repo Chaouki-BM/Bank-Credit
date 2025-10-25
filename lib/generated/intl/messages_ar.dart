@@ -33,6 +33,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "LoginWith": MessageLookupByLibrary.simpleMessage("تسجيل الدخول بواسطة"),
     "MonthlyP": MessageLookupByLibrary.simpleMessage("الدفعة الشهرية"),
     "Profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
+    "Scan": MessageLookupByLibrary.simpleMessage("مسح"),
     "Skip": MessageLookupByLibrary.simpleMessage("تخطي"),
     "SplashT1": MessageLookupByLibrary.simpleMessage("مرحبًا بك في تمويل بنكي"),
     "SplashT2": MessageLookupByLibrary.simpleMessage("وصول فوري إلى التمويل"),
@@ -45,6 +46,12 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "SsubT3": MessageLookupByLibrary.simpleMessage(
       "بياناتك محمية بتشفير مصرفي، والتنبيهات الفورية تبقيك على اطلاع.",
+    ),
+    "Subtitle1Scan": MessageLookupByLibrary.simpleMessage(
+      "هويتك وبياناتك الشخصية محمية بأمان تام",
+    ),
+    "Subtitle2Scan": MessageLookupByLibrary.simpleMessage(
+      "سريع وسهل بدون أي معاملات ورقية",
     ),
     "Term": MessageLookupByLibrary.simpleMessage("مدة"),
     "WelcomeLogin": MessageLookupByLibrary.simpleMessage(
@@ -78,6 +85,8 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "refused": MessageLookupByLibrary.simpleMessage("مرفوض"),
     "splashText": MessageLookupByLibrary.simpleMessage("تمويل بنكي مقدم من"),
+    "titelScan": MessageLookupByLibrary.simpleMessage("قم بمسح مستندك"),
     "totalRequest": MessageLookupByLibrary.simpleMessage("إجمالي الطلبات"),
+    "upload": MessageLookupByLibrary.simpleMessage("تحميل"),
   };
 }

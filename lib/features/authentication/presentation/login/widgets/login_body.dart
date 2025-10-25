@@ -95,14 +95,15 @@ class LoginBody extends StatelessWidget {
 
   void handelLoginwithGG(BuildContext context) async {
     print("handelLoginwithGG");
-    final user = await AuthRepoImpl().loginWithGoogle();
-    if (user != null) {
-      Navigator.pushNamed(context, '/completeInformation');
-      print("user $user");
-    } else {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text('Login failed or cancelled')));
-    }
+    Navigator.pushNamed(context, '/completeInformation');
+    // final user = await AuthRepoImpl().loginWithGoogle();
+    // if (user != null) {
+    //   Navigator.pushNamed(context, '/completeInformation');
+    //   print("user $user");
+    // } else {
+    //   ScaffoldMessenger.of(
+    //     context,
+    //   ).showSnackBar(SnackBar(content: Text('Login failed or cancelled')));
+    // }
   }
 }
